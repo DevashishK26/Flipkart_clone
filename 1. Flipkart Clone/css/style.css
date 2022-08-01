@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Square+Peg&family=Ubuntu&display=swap');
+
+:root{
+    --main-bg-color: #2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+nav{
+   display: flex; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    padding: 0 20px;
+}
+nav ul{
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 17px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+.search button:hover{
+    font-weight: bold;
+}
+.search input{
+    width: 30vw;
+    height: 28px;
+    border-radius: 5px;
+    margin: 0 15px 0 50px;
+    padding-left: 11px;
+}
+.container{
+    min-height: calc(100vh - 10vh - 60px);
+}
+.card{
+    /* background-color: red; */
+    max-width: 90vw;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /* display: flex;
+    flex-direction: row; */
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20px;
+    overflow: hidden;
+}
+.card-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 12vw;
+    margin: 0 15px;
+}
+/* .card-item img{
+    width: 15vw;
+
+} */
+.card h2{
+    margin: 30px 0 20px 0;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+footer{
+    
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
